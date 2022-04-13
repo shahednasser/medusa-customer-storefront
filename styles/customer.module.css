@@ -1,0 +1,145 @@
+.container {
+  min-height: 100vh;
+  padding: 0 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.125rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  padding: 0.5rem 1.25rem;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  background: var(--logo-color-900);
+  color: white;
+  border-radius: 8px;
+  transition: background .2s ease-in;
+  font-weight: 500;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--logo-color-1000);
+}
+
+.inputContainer {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.profileSidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profileSidebar a {
+  padding: 5px 10px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.profileSidebar .active,
+.profileSidebar a:hover {
+  background-color: lightgray;
+}
+
+.profileContent {
+  flex: 2;
+  margin-left: 30px;
+}
+
+.profileContent h1 {
+  margin-top: 0;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.table tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.table th,
+.table td {
+  width: calc(100% / 3);
+  word-wrap: break-word;
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+}
+
+.table td {
+  font-size: 1rem;
+}
+
+.pagination {
+  text-align: right;
+}
+
+.pagination a {
+  text-decoration: underline;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+@media screen and (min-width: 768px) {
+  .signForm,
+  .profile {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .signForm,
+  .profile {
+    width: 80vw;
+  }
+}
